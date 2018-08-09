@@ -3,7 +3,9 @@ A javascript library for interpolating 2D scalar fields/ 3D surfaces.
 
 # Currently under development...
 
-# 'Features'
+# Advantages
+- ## Arbitrary interpolated points
+  Interpolate whatever point you want, the library doesn't just add points with regular spacings.
 - ## Caching
   The coefficients are cached, making significant numbers of calls to the interpolator more efficient.
 - ## Easy tiling
@@ -14,3 +16,9 @@ A javascript library for interpolating 2D scalar fields/ 3D surfaces.
   This is my first open source project/ library that I'm really intending to be maintained and usable by the community. Though it's a small project, I think the ideas behind the Contributor Covenant are great and the repository will be maintained as described in the Code of Conduct. Please contact me at me@davidbol.es to report any potentially violating behavior or with any questions.
 - ## Released under BSD0, a.k.a the "Free Public License"
   Use this code for anything you like and don't worry about having to include it's license. Just don't blame me if anything goes wrong!
+
+# Drawbacks
+- ## Testing
+  Currently this project includes no automated testing and hasn't even been rigorously tested manually. I'm using it for my own project so major problems should get fixed quickly but subtle issues might be missed. Contributions welcome!
+- ## Performance
+  This library is semi-optimized for my needs (doing lots of interpolation over a large grid) and it's caching might actually slow down other applications (e.g. image scaling).
