@@ -1,0 +1,28 @@
+{
+  "name": "bicubic-interpolate",
+  "version": "0.0.0",
+  "description": "A library for interpolating 2D scalar fields/ 3D surfaces.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/david476/bicubic-interpolate.git"
+  },
+  "keywords": [
+    "bicubic",
+    "interpolation",
+    "2d",
+    "surface"
+  ],
+  "author": "David Boles",
+  "license": "0BSD",
+  "bugs": {
+    "url": "https://github.com/david476/bicubic-interpolate/issues"
+  },
+  "homepage": "https://github.com/david476/bicubic-interpolate#readme",
+  "devDependencies": {
+    "covgen": "^3.1.0"
+  }
+}

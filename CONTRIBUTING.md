@@ -1,0 +1,1 @@
+This is a very small project so just open up an issue (before making a PR), let me know what you're thinking, and let's talk. Please make sure you abide by the Code of Conduct.
