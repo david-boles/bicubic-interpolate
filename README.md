@@ -21,4 +21,4 @@ A javascript library for interpolating 2D scalar fields/ 3D surfaces.
 - ## Testing
   Currently this project includes no automated testing and hasn't even been rigorously tested manually. I'm using it for my own project so major problems should get fixed quickly but subtle issues might be missed. Contributions welcome!
 - ## Performance
-  This library is semi-optimized for my needs (doing lots of interpolation over a large grid) and it's caching might actually slow down other applications (e.g. image scaling).
+  This library is semi-optimized for my needs (doing lots of interpolation over a large grid) and its caching might actually slow down other applications (e.g. image scaling).
