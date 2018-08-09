@@ -1,8 +1,6 @@
 # bicubic-interpolate
 A javascript library for interpolating 2D scalar fields/ 3D surfaces.
 
-# Currently under development...
-
 # Advantages
 - ## Arbitrary interpolated points
   Interpolate whatever point you want, the library doesn't just add points with regular spacings.
@@ -22,6 +20,8 @@ A javascript library for interpolating 2D scalar fields/ 3D surfaces.
 # Drawbacks
 - ## Testing
   Currently this project includes no automated testing and hasn't even been rigorously tested manually. I'm using it for my own project so major problems should get fixed quickly but subtle issues might be missed. Contributions welcome!
+- ## Documentation
+  Workin' on it!
 - ## Performance
   This library is semi-optimized for my needs (doing lots of interpolation over a large grid) but its caching might actually slow down other applications (e.g. scaling images down).
 - ## Only Bicubic
