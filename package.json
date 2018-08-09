@@ -4,7 +4,8 @@
   "description": "A library for interpolating 2D scalar fields/ 3D surfaces.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx webpack-cli --mode production --output-library bicubic --output-filename min.js index.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,8 @@
   },
   "homepage": "https://github.com/david476/bicubic-interpolate#readme",
   "devDependencies": {
-    "covgen": "^3.1.0"
+    "covgen": "^3.1.0",
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0"
   }
 }
