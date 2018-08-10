@@ -51,12 +51,15 @@ importScripts('https://unpkg.com/bicubic-interpolate@^1.0.0/dist/min.js');
 
 ## Background
 Bicubic interpolation guesses the values for a function of the form `f(x, y) = z` at a 2D point (purple) that is within a unit square (blue) by considering a 4x4 grid of samples around it (green):
+
 ![bicubic](https://raw.githubusercontent.com/david476/bicubic-interpolate/master/assets/bicubic.png)
 
 You can then make a grid of these interpolators to, for instance, interpolate over an image:
+
 ![grid](https://raw.githubusercontent.com/david476/bicubic-interpolate/master/assets/grid.png)
 
 To be able to use bicubic interpolation at or past the edges of a grid of samples, additional sample points have to be estimated (this library uses linear extrapolation):
+
 ![extrapolated](https://raw.githubusercontent.com/david476/bicubic-interpolate/master/assets/extrapolated.png)
 
 ## Usage
