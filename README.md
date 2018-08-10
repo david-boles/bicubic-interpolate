@@ -137,7 +137,7 @@ Arguments:
 - `options` (optional) - An object containing configuration options for the interpolator.
   - `scaleX` and `scaleY` - Multiply the x/y values input to the interpolator by before interpolating. Default: 1
   - `translateX` and `translateY` - Add to the x/y values input to the interpolator by before interpolating but after scaling. Default: 0
-  - `extrapolate` - Linearly extrapolate a margin of 2 samples around those given (the `values` array is modified!). Increases possible region for interpolating to the the (m+1) x (n+1) rectangle from (-1, -1) to (m, n).
+  - `extrapolate` - Linearly extrapolate a margin of 2 samples around those given (the `values` array is modified!). Increases possible region for interpolating to the the (m+1) x (n+1) rectangle from (-1, -1) to (m, n). Default: false
 
 Returns: A function that takes in x and y values between 1 and n/m - 2 (or -1 and n/m if `options.extrapolate` is true) as its two arguments and returns an estimated value for z.
 
