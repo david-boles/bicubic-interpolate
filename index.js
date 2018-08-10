@@ -3,7 +3,7 @@
 // You can set `options.scaleX` and `options.scaleY` to multiply the positions input to the interpolator by before interpolating. defaults = 1
 // You can set `options.translateX` and `options.translateY` to add to the positions input to the interpolator before interpolating (but after scaling). defaults = 0
 // Returns a function that takes two arguments (x, y) and returns the interpolated value.
-function createInterpolator(values, options) {
+function createInterpolator(values, options={}) {
   options = Object.assign({
     extrapolate: false,
     scaleX: 1,
@@ -54,7 +54,7 @@ function createInterpolator(values, options) {
 // You can set `options.scaleX` and `options.scaleY` to multiply the positions input to the interpolators by before interpolating. defaults = 1
 // You can set `options.translateX` and `options.translateY` to add to the positions input to the interpolators before interpolating (but after scaling). defaults = 0
 // Returns a function that takes two arguments (x, y) and returns the interpolated value.
-function createGridInterpolator(values, options) {
+function createGridInterpolator(values, options={}) {
   options = Object.assign({
     extrapolate: false,
     scaleX: 1,
@@ -140,7 +140,7 @@ function createGridInterpolator(values, options) {
 
 // These are just helper functions for when you need to interpolate multiple sets of values (e.g. components of color in an image).
 // Instead of taking in 2D value arrays they expect 3D arrays, where the last index corresponds to the set/ surface (e.g. values[x][y][s])
-function createMultiInterpolator(values, options) {
+function createMultiInterpolator(values, options={}) {
   const s = values[0][0].length;
   const interpolators = [];
   for(var i = 0; i < s; i++) interpolators[i] = createInterpolator(values.map(col => col.map(vals => vals[i])), options);
@@ -149,7 +149,7 @@ function createMultiInterpolator(values, options) {
   }
 }
 
-function createMultiGridInterpolator(values, options) {
+function createMultiGridInterpolator(values, options={}) {
   const s = values[0][0].length;
   const interpolators = [];
   for(var i = 0; i < s; i++) interpolators[i] = createGridInterpolator(values.map(col => col.map(vals => vals[i])), options);
